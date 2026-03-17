@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="HELP HUB"
+             android:textColor="#008000"
+            android:textSize="30dp"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="🔍 Explore campaigns"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:padding="10dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/foodBtn"
+            android:layout_width="18dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="2dp"
+            android:backgroundTint="#008000"
+            android:padding="16dp"
+            android:text="Food Donation" />
+
+        <Button
+            android:id="@+id/eduBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:layout_margin="2dp"
+            android:padding="16dp"
+            android:backgroundTint="#008000"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/healthBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:layout_margin="2dp"
+            android:padding="16dp"
+            android:backgroundTint="#008000"
+            android:layout_columnWeight="1"/>
+
+        <Button
+            android:id="@+id/animalBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Animal walfare"
+            android:layout_margin="2dp"
+            android:padding="16dp"
+            android:backgroundTint="#008000"
+            android:layout_columnWeight="1"/>
+    </GridLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F5F5F5"
+        android:padding="12dp"
+        android:layout_marginTop="8dp">
+
+
+         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+              android:layout_gravity="center"
+             android:background="@drawable/img_1"
+
+             />
+
+    </LinearLayout>
+
+</LinearLayout>
