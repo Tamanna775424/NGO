@@ -11,15 +11,16 @@ import kotlinx.coroutines.withContext
 import java.io.File
 import java.io.FileOutputStream
 
-    class AppwriteManager private constructor(private val context: Context) {
+class AppwriteManager private constructor(private val context: Context) {
 
 
-        private val endpoint = "https://sgp.cloud.appwrite.io/v1";
-        private val projectId = "69b237160007ee925c5b "
-        private val bucketId = "69b239de000f2b0637da"
+    private val endpoint = "https://fra.cloud.appwrite.io/v1"
+    private val projectId = "68402a5a000611723049"
+    private val bucketId = "6996d375001a97008da8"
 
 
-        private val client = Client(context)
+
+    private val client = Client(context)
             .setEndpoint(endpoint)
             .setProject(projectId)
 

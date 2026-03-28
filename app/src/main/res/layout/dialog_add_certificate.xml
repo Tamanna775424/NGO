@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/ivSelectImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:background="#DDDDDD"
+        android:src="@android:drawable/ic_menu_camera" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Certificate Title"
+        android:layout_marginTop="15dp"/>
+
+    <EditText
+        android:id="@+id/etIssuedBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Issued By (e.g. Google, NGO Name)"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload Now"
+        android:layout_marginTop="15dp"/>
+
+    <ProgressBar
+        android:id="@+id/uploadProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>

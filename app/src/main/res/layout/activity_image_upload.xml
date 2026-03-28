@@ -5,6 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".image_upload">
+    tools:context=".OldActivities.image_upload">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

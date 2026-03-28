@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "130320879028",
-    "project_id": "tamanna-ngo",
-    "storage_bucket": "tamanna-ngo.firebasestorage.app"
+    "project_number": "938615436439",
+    "project_id": "ngo-app-9a20b",
+    "storage_bucket": "ngo-app-9a20b.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:130320879028:android:60a69b244b0f933db776e1",
+        "mobilesdk_app_id": "1:938615436439:android:902186e335f3f316a1a5d2",
         "android_client_info": {
           "package_name": "com.example.ngo"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAHMZBMOIAiG0hLGxOOke1FYf60Qpo5urI"
+          "current_key": "AIzaSyB_auhpX386yZU1IepzhhTBSFOYVfH2WSs"
         }
       ],
       "services": {
