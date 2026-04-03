@@ -69,7 +69,7 @@ class ProfileFragment : Fragment() {
                     user?.let {
                         // Set Text Details
                         binding.tvProfileName.text = it.name ?: "N/A"
-                        binding.tvProfileEmail.text = it.email ?: "No Email"
+                        binding.tvProfileEmail.text = FirebaseAuth.getInstance().currentUser?.email.toString()
                         binding.tvProfilePhone.text = it.phone ?: "No Phone"
 
                         // Load Profile Image using Glide

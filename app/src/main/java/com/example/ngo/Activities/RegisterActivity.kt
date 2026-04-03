@@ -137,7 +137,7 @@ class RegisterActivity : AppCompatActivity() {
                     .setValue(user)
                     .addOnSuccessListener {
                         setLoadingState(false)
-                        showToast("Account Created Successfully!")
+                        startActivity(Intent(this@RegisterActivity, AdminActivity::class.java))
                         finish()
                     }
                     .addOnFailureListener { e ->
