@@ -65,7 +65,6 @@ class ProfileFragment : Fragment() {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
                     val user = snapshot.getValue(User::class.java)
-
                     user?.let {
                         // Set Text Details
                         binding.tvProfileName.text = it.name ?: "N/A"
@@ -132,7 +131,6 @@ class ProfileFragment : Fragment() {
             "name" to name,
             "phone" to phone
         )
-
         dbRef.updateChildren(updates).addOnSuccessListener {
             Toast.makeText(context, "Profile Updated!", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener { e ->

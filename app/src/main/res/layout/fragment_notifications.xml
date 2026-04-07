@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Fragments.NotificationsFragment">
 
-
     <TextView
         android:id="@+id/titleNotif"
         android:layout_width="wrap_content"

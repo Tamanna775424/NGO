@@ -16,7 +16,6 @@
             android:id="@+id/certificateFragment"
             android:icon="@drawable/ic_certificates"
             android:title="Certificates" />
-
         <item
             android:id="@+id/profileFragment"
             android:icon="@drawable/ic_user"

@@ -50,7 +50,6 @@ class AdminHomeFragment : Fragment() {
 
             findNavController().navigate(R.id.adminViewEventsListFragment)
         }
-
         fetchHistory()
         return view
     }
