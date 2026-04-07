@@ -10,7 +10,6 @@ data class User(
     val profileUrl: String? = null
 )
 
-
 @Parcelize
 data class DonationEvent(
     val eventId: String? = null,
@@ -23,8 +22,6 @@ data class DonationEvent(
     var eventStatus: Boolean ?= false,
     val timestamp: Long = System.currentTimeMillis()
 ): Parcelable
-
-
 data class PaymentDetails(
     val paymentId: String? = "",
     val amount: String? = "",

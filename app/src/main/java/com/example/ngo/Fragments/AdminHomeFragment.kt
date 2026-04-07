@@ -20,7 +20,6 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 import java.util.UUID
-
 class AdminHomeFragment : Fragment() {
 
     private lateinit var tvTotalFunds: TextView
