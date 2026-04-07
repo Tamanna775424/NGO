@@ -64,7 +64,7 @@
                     android:padding="20dp">
 
                     <TextView
-                        android:layout_width="match_parent"
+                        android:layout_width="331dp"
                         android:layout_height="wrap_content"
                         android:lineSpacingExtra="4dp"
                         android:text="Welcome to our NGO platform. We are dedicated to bridging the gap between donors and those in need. Through this app, you can track total funds, publish donation events, and view verified certificates of our impact."

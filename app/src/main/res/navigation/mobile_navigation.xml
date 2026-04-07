@@ -32,4 +32,16 @@
         android:name="com.example.ngo.Fragments.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/adminViewEventsListFragment"
+        android:name="com.example.ngo.Fragments.AdminViewEventsListFragment"
+        android:label="AdminViewEventsListFragment" />
+    <fragment
+        android:id="@+id/adminHomeFragment2"
+        android:name="com.example.ngo.Fragments.AdminHomeFragment"
+        android:label="AdminHomeFragment" />
+    <fragment
+        android:id="@+id/eventViewFragment2"
+        android:name="com.example.ngo.Fragments.EventViewFragment"
+        android:label="EventViewFragment" />
 </navigation>

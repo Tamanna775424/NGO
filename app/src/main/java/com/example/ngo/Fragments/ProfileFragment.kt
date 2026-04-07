@@ -5,10 +5,13 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.bumptech.glide.Glide
 import com.example.ngo.Activities.LoginActivity
+import com.example.ngo.R
 import com.example.ngo.Utils.User
 import com.example.ngo.databinding.DialogEditProfileBinding
 import com.example.ngo.databinding.FragmentProfileBinding
@@ -30,6 +33,7 @@ class ProfileFragment : Fragment() {
     ): View {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -51,12 +55,18 @@ class ProfileFragment : Fragment() {
         binding.btnEditProfile.setOnClickListener {
             showEditDialog()
         }
-
         // 3. Logout Logic
         binding.btnLogout.setOnClickListener {
             auth.signOut()
             redirectToLogin()
         }
+
+
+        view.findViewById<Button>(R.id.btnevent).setOnClickListener {
+            findNavController().navigate(R.id.adminViewEventsListFragment)
+
+        }
+
     }
 
     private fun fetchUserData() {
@@ -68,7 +78,11 @@ class ProfileFragment : Fragment() {
                     user?.let {
                         // Set Text Details
                         binding.tvProfileName.text = it.name ?: "N/A"
+<<<<<<< HEAD
+                        binding.tvProfileEmail.text = FirebaseAuth.getInstance().currentUser?.email.toString() ?: "No Email"
+=======
                         binding.tvProfileEmail.text = FirebaseAuth.getInstance().currentUser?.email.toString()
+>>>>>>> ce1adfdd9eb3a055b2c0955ea4622f5f42fa2867
                         binding.tvProfilePhone.text = it.phone ?: "No Phone"
 
                         // Load Profile Image using Glide
@@ -86,6 +100,7 @@ class ProfileFragment : Fragment() {
             override fun onCancelled(error: DatabaseError) {
                 if (isAdded) {
                     Toast.makeText(context, "Database Error: ${error.message}", Toast.LENGTH_SHORT).show()
+
                 }
             }
         })
@@ -135,6 +150,7 @@ class ProfileFragment : Fragment() {
             Toast.makeText(context, "Profile Updated!", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener { e ->
             Toast.makeText(context, "Update failed: ${e.message}", Toast.LENGTH_SHORT).show()
+
         }
     }
     override fun onDestroyView() {
@@ -143,3 +159,6 @@ class ProfileFragment : Fragment() {
         _binding = null
     }
 }
+
+
+

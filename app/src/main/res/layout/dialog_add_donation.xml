@@ -50,6 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Pickup Address"
+            android:id="@+id/custom"
             app:endIconMode="custom"
             app:endIconDrawable="@android:drawable/ic_menu_mylocation"
             android:layout_marginBottom="12dp">

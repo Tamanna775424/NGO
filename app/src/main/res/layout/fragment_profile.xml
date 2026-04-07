@@ -94,7 +94,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
+<<<<<<< HEAD
+                        android:text="tamannasabhrwal95@gmail.com"
+=======
                         android:text="anmolpabla006@gmail.com"
+>>>>>>> ce1adfdd9eb3a055b2c0955ea4622f5f42fa2867
                         android:textColor="#424242"
                         android:textSize="15sp" />
                 </LinearLayout>
@@ -146,13 +150,47 @@
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:layout_marginBottom="96dp"
+=======
+<<<<<<< HEAD
+        android:layout_marginBottom="40dp"
+=======
+        android:layout_marginBottom="132dp"
+>>>>>>> ce1adfdd9eb3a055b2c0955ea4622f5f42fa2867
+>>>>>>> bae57c5d81f8226921b32fb200b195ec9642d15b
         android:backgroundTint="#D32F2F"
         android:text="Sign Out"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+=======
+<<<<<<< HEAD
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#D32F2F"
+        android:text="My Events"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+=======
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+>>>>>>> ce1adfdd9eb3a055b2c0955ea4622f5f42fa2867
+>>>>>>> bae57c5d81f8226921b32fb200b195ec9642d15b

@@ -59,7 +59,7 @@ class PaymentFragment : Fragment() {
 
     private fun startPayment(amount: Double) {
         val checkout = Checkout()
-        checkout.setKeyID("rzp_test_YOUR_KEY_ID")
+        checkout.setKeyID("rzp_live_ILgsfZCZoFIKMb")
 
         try {
             val options = JSONObject()

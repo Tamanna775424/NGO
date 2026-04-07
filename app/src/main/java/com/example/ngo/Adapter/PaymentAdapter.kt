@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ngo.R
 import com.example.ngo.Utils.PaymentDetails
 
-class PaymentAdapter(private val list: List<PaymentDetails>) :
+class PaymentAdapter(private val list: MutableList<PaymentDetails>) :
     RecyclerView.Adapter<PaymentAdapter.VH>() {
 
     class VH(v: View) : RecyclerView.ViewHolder(v) {

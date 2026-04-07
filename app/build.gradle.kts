@@ -4,11 +4,9 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id("kotlin-parcelize") // <--- Add this line
 }
-
 android {
     namespace = "com.example.ngo"
     compileSdk = 36
-
     defaultConfig {
         applicationId = "com.example.ngo"
         minSdk = 24
@@ -56,7 +54,6 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
 
 
-
     implementation("androidx.core:core-splashscreen:1.0.0")
 
     implementation(platform("com.google.firebase:firebase-bom:34.10.0"))
@@ -72,5 +69,6 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.16.0")
 
     implementation("com.razorpay:checkout:1.6.41")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
 
 }
