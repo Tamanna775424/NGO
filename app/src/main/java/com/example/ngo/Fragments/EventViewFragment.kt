@@ -10,7 +10,6 @@ import com.example.ngo.R
 import com.example.ngo.Utils.DonationEvent
 import com.example.ngo.databinding.FragmentEventViewBinding
 import com.google.firebase.database.*
-
 class EventViewFragment : Fragment() {
 
     private var _binding: FragmentEventViewBinding? = null
@@ -59,7 +58,6 @@ class EventViewFragment : Fragment() {
                 override fun onCancelled(error: DatabaseError) {}
             })
     }
-
     private fun setupStatusButton(event: DonationEvent) {
         binding.btnUpdateStatus.setOnClickListener {
             val newStatus = !(event.eventStatus ?: false)

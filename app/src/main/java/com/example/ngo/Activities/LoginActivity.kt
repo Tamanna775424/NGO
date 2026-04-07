@@ -42,7 +42,7 @@ class LoginActivity : AppCompatActivity() {
 
         // If user is already logged in, skip to Main
         if (auth.currentUser != null) {
-            startActivity(Intent(this, BottomNavigationActivity::class.java))
+            startActivity(Intent(this, AdminActivity::class.java))
             finish()
         }
 
@@ -67,7 +67,7 @@ class LoginActivity : AppCompatActivity() {
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
                     Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, BottomNavigationActivity::class.java))
+                    startActivity(Intent(this, AdminActivity::class.java))
                     finish()
                 } else {
 

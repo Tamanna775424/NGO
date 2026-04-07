@@ -29,7 +29,7 @@ class OnBoardingActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             } else {
-                val intent = Intent(this, BottomNavigationActivity::class.java)
+                val intent = Intent(this, AdminActivity::class.java)
                 startActivity(intent)
                 finish()
 

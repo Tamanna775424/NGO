@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <item name="certificateImage" type="id"/>
+=======
+    <item name="view" type="id">view</item>
+>>>>>>> ce1adfdd9eb3a055b2c0955ea4622f5f42fa2867
 </resources>
