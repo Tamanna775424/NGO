@@ -120,8 +120,8 @@ class RegisterActivity : AppCompatActivity() {
         lifecycleScope.launch {
             try {
                 // 1. Upload to Appwrite
-                val imageUrl = AppwriteManager.getInstance(this@RegisterActivity)
-                    .uploadImageFromUri(imageUri!!)
+//                val imageUrl = AppwriteManager.getInstance(this@RegisterActivity)
+//                    .uploadImageFromUri(imageUri!!)
 
                 // 2. Create User Object using Data Class
                 val user = User(

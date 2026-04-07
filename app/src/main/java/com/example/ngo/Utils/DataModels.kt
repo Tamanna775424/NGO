@@ -20,23 +20,25 @@ data class DonationEvent(
     val address: String? = null,
     val date: String? = null,
     val time: String? = null,
-    var eventStatus: Boolean ?= false,
-    val timestamp: Long = System.currentTimeMillis()
-): Parcelable
+    var eventStatus: Boolean? = false,
+    val timestamp: Long = System.currentTimeMillis(),
+): Parcelable {
 
 
-data class PaymentDetails(
-    val paymentId: String? = "",
-    val amount: String? = "",
-    val date: String? = "",
-    val time: String? = "",
-    val userUid: String? = ""
-)
+    data class PaymentDetails(
+        val paymentId: String? = "",
+        val amount: String? = "",
+        val date: String? = "",
+        val time: String? = "",
+        val userUid: String? = "",
+    )
 
-data class Certificate(
-    val id: String? = "",
-    val title: String? = "",
-    val issuedBy: String? = "",
-    val imageUrl: String? = "",
-    val dateAdded: String? = ""
-)
+    data class Certificate(
+        val id: String? = "",
+        val title: String? = "",
+        val issuedBy: String? = "",
+        val imageUrl: String? = "",
+        val dateAdded: String? = ""
+
+    )
+}

@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ngo.Adapter.EventAdapter
 import com.example.ngo.R
 import com.example.ngo.Utils.DonationEvent
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
 
 class AdminViewEventsListFragment : Fragment() {
@@ -56,12 +57,17 @@ class AdminViewEventsListFragment : Fragment() {
                 allEvents.clear()
                 for (child in snapshot.children) {
                     val event = child.getValue(DonationEvent::class.java)
-                    event?.let { allEvents.add(it) }
+                    event?.let {
+
+                        if(event.donorId == FirebaseAuth.getInstance().uid) {
+                            allEvents.add(it)
+
+                        }
+                    }
                 }
                 // Trigger filter for current spinner selection
                 filterList(spinnerFilter.selectedItemPosition == 1)
             }
-
             override fun onCancelled(error: DatabaseError) {}
         })
     }

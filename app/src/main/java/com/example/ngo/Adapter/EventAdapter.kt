@@ -11,7 +11,7 @@ import com.example.ngo.Utils.DonationEvent
 
 class EventAdapter(
     private val list: List<DonationEvent>,
-    private val onItemClick: (DonationEvent) -> Unit // Added listener
+    private val onItemClick: (DonationEvent) -> Unit
 ) : RecyclerView.Adapter<EventAdapter.EventViewHolder>() {
 
     class EventViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -19,20 +19,22 @@ class EventAdapter(
         val desc: TextView = view.findViewById(R.id.tvDesc)
         val address: TextView = view.findViewById(R.id.tvAddress)
         val dateTime: TextView = view.findViewById(R.id.tvDateTime)
+
         val status: TextView = view.findViewById(R.id.tvStatusLabel)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): EventViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_donation_event, parent, false)
+        val view = LayoutInflater.from(parent.context)
+            .inflate(R.layout.item_donation_event, parent, false)
         return EventViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: EventViewHolder, position: Int) {
         val event = list[position]
 
-        holder.itemView.setOnClickListener { onItemClick(event) } // Set click listener
+        holder.itemView.setOnClickListener { onItemClick(event) }
 
-        holder.type.text = event.donationType
+//        holder.type.text = event.type
         holder.desc.text = event.description
         holder.address.text = "📍 ${event.address}"
         holder.dateTime.text = "🗓 ${event.date} | ${event.time}"

@@ -98,15 +98,17 @@ class CertificateFragment : Fragment() {
 
                 // 2. Prepare Data
                 val id = database.push().key ?: ""
-                val currentDate = SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(Date())
+                val currentDate =
+                    SimpleDateFormat("dd MMM yyyy", Locale.getDefault()).format(Date())
 
                 val newCert = Certificate(
                     id = id,
                     title = title,
                     issuedBy = issuer,
                     imageUrl = imageUrl,
-                    dateAdded = currentDate
+                    dateAdded = currentDate,
                 )
+
 
                 // 3. Save to Firebase
                 database.child(id).setValue(newCert).addOnCompleteListener {

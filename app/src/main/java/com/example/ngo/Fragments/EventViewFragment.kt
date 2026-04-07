@@ -41,8 +41,8 @@ class EventViewFragment : Fragment() {
         binding.tvDetailDateTime.text = "🗓 ${event.date} at ${event.time}"
 
         updateButtonUI(event.eventStatus ?: false)
-    }
 
+    }
     private fun fetchDonorDetails(donorId: String?) {
         if (donorId == null) return
 
